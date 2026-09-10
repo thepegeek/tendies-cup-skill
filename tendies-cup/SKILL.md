@@ -43,7 +43,7 @@ ordered that way). Always say which cup you acted on.
 
 ## Task 2: enter a cup
 
-1. Check `entries_open` is true and the user isn't already in: `GET /api/book?cup=<slug>&wallet=<address>` → `entered`.
+1. Check `entries_open` is true, the time is before `entriesCloseAt` (entries shut an hour before the close), and the user isn't already in: `GET /api/book?cup=<slug>&wallet=<address>` → `entered`.
 2. Confirm with the user: "This burns {entryHuman} CUP (about ${entryUsd}) permanently. Continue?"
 3. Send an ERC-20 `transfer` of exactly `entry_amount` of the $CUP contract to the burn address on chain 4663.
    Exactly that amount: the scanner attributes burns to cups by exact size.
@@ -94,7 +94,7 @@ last 15 minutes; frozen names can't be traded.
 
 ## Never
 
-- Never burn more than one entry per cup per wallet, and never burn if `entries_open` is false.
+- Never burn more than one entry per cup per wallet, and never burn if `entries_open` is false or the time is past `entriesCloseAt`.
 - Never send $CUP anywhere but the burn address for an entry.
 - Never claim a prize other than the cup's `prize_text`. TBA means no prize is posted.
 - Never describe this as investing or a return. It is a skill contest with a posted prize.
