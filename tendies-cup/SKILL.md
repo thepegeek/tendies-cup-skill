@@ -96,6 +96,7 @@ last 15 minutes; frozen names can't be traded.
 
 - Never burn more than one entry per cup per wallet, and never burn if `entries_open` is false or the time is past `entriesCloseAt`.
 - Never send $CUP anywhere but the burn address for an entry.
-- Never claim a prize other than the cup's `prize_text`. TBA means no prize is posted.
+- Never claim a prize other than the cup's `prize_text`. TBA means no prize is posted. A posted prize can change before a cup opens
+  (entries already burned stay valid); once a cup is open its prize is fixed. Always read `prize_text` fresh rather than quoting an earlier value.
 - Never describe this as investing or a return. It is a skill contest with a posted prize.
 - Never share the session token with anyone.

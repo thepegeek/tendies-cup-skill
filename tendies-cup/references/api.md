@@ -21,7 +21,7 @@ authenticated by a session token or a wallet signature. Chain: Robinhood Chain, 
 { "cups": [ { "slug": "opening-cup", "name": "Opening Cup", "status": "upcoming",
   "starts_at": "2026-09-14T00:00:00.000Z", "ends_at": "2026-09-18T20:00:00.000Z",
   "entry_amount": "2500000000000000000000000", "entryHuman": "2,500,000", "entryUsd": 2.6,
-  "prize_text": "5 SPY", "potUsd": 3808.1, "prize_wallet": "0x21d4…11eb", "entries_open": true, "entriesCloseAt": "2026-09-18T19:00:00.000Z",
+  "prize_text": "3 SPY", "potUsd": 2295.8, "prize_wallet": "0x21d4…11eb", "entries_open": true, "entriesCloseAt": "2026-09-18T19:00:00.000Z",
   "entries": 15, "tickers": ["NVDA","AAPL", "..."], "maxTrades": 20, "blurb": "…" } ] }
 ```
 Ordered: open cups first, then upcoming by start, then settled.
