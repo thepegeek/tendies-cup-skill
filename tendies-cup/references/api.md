@@ -84,7 +84,7 @@ Rate limits: 12 orders per minute per wallet, 30 per minute per IP.
 ## GET /api/leaderboard?cup={slug}
 
 `{ "cup", "settled", "started", "asOf", "rows": [ { "rank", "wallet", "value", "returnPct", "trades", "top", "prize" } ] }`.
-`prize` is null before the cup opens and for cups with no posted prize.
+`prize` is null before the cup opens and for cups with no posted prize. The payout table is fixed for every cup: the top three take 50% / 30% / 20% of the pot, whatever the entry count. A book with no fills is ranked but not paid.
 
 ## GET /api/snapshot?cup={slug}
 

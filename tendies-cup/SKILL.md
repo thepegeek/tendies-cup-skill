@@ -13,8 +13,8 @@ metadata:
 # Tendies Cup
 
 A fantasy trading league on Robinhood Chain (chain id 4663). Every entrant gets a virtual $100,000
-and trades a fixed list of names at Chainlink prices for one cup. Best book at the close wins that
-cup's posted prize. Nothing traded inside a cup is real. Only the entry (a token burn) and the prize are.
+and trades a fixed list of names at Chainlink prices for one cup. Best book at the close wins. The top three take 50 / 30 / 20 of that
+cup's posted prize, whatever the entry count. Nothing traded inside a cup is real. Only the entry (a token burn) and the prize are.
 
 Base URL `https://app.playtendiescup.fun`. Full API: https://app.playtendiescup.fun/api.md.
 $CUP contract `0xD475211BEF5dCc03B4c8c864f90bde331AF80ba3`. Burn address
